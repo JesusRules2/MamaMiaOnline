@@ -75,6 +75,11 @@ float CreateMarioTimer = 0;
     [SyncVar]
      bool bShowScreen = false;
 
+    public bool bShowScreenGet
+    {
+        get => bShowScreen;
+    }
+
     public static List<Player> lobbyPlayers = new List<Player> ();
 
     //STAR EFFECT VARIABLES

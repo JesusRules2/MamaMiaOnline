@@ -239,7 +239,9 @@ public class InputHandler : NetworkBehaviour
         //    return;
         //}
 
-        states.aiming = states.onGround && (mouse2 > 0);
+        // states.aiming = states.onGround && (mouse2 > 0); //Dont aim IF not on ground!! 
+        states.aiming = (mouse2 > 0); //NEW! Match other MamaMia (Steam/Splitscreen)
+
         states.canRun = !states.aiming;
         states.walk = (walk > 0);
         states.sprint = (sprint > 0);

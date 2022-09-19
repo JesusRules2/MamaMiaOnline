@@ -39,7 +39,7 @@ public class PlayerName : NetworkBehaviour {
         {
            // if (GetComponent<PlayerSwitch>().isMario == true)
             {
-                if (canvasDisplay != null) //Mario
+                if (canvasDisplay != null && TurnManager.instance && !TurnManager.instance.bShowScreenGet) //Mario and GAME IS NOT LOADING
                 {
                     //GameObject camera1 = GameObject.FindGameObjectWithTag("PikachuCamera");
 
