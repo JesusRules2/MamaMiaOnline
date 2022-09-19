@@ -21,6 +21,7 @@ public class AutoHostClient : MonoBehaviour {
         }
     }
 
+
     public void JoinLocal () {
         networkManager.networkAddress = "localhost";
         networkManager.StartClient ();

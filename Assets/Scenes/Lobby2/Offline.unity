@@ -641,12 +641,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576294411}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b0fecffa3f624585964b0d0eb21b18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Port: 7777
+  Port: 3201
   NoDelay: 1
   Interval: 10
   FastResend: 2
@@ -671,6 +671,30 @@ MonoBehaviour:
   height: 328
   maxLogCount: 50
   hotKey: 8
+--- !u!114 &576294414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576294411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7424c1070fad4ba2a7a96b02fbeb4bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  port: 3201
+  NoDelay: 1
+  SendTimeout: 5000
+  ReceiveTimeout: 30000
+  serverMaxMessageSize: 16384
+  serverMaxReceivesPerTick: 10000
+  serverSendQueueLimitPerConnection: 10000
+  serverReceiveQueueLimitPerConnection: 10000
+  clientMaxMessageSize: 16384
+  clientMaxReceivesPerTick: 1000
+  clientSendQueueLimit: 10000
+  clientReceiveQueueLimit: 10000
 --- !u!1 &635385981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1546,7 +1570,7 @@ PrefabInstance:
         type: 3}
       propertyPath: transport
       value: 
-      objectReference: {fileID: 576294412}
+      objectReference: {fileID: 576294414}
     - target: {fileID: 2072950961774813197, guid: bb58a03388ae0f94094841a85d2992d7,
         type: 3}
       propertyPath: MarioPrefab
@@ -1578,7 +1602,12 @@ PrefabInstance:
     - target: {fileID: 2072950961774813197, guid: bb58a03388ae0f94094841a85d2992d7,
         type: 3}
       propertyPath: networkAddress
-      value: 15.222.196.236
+      value: 3.98.230.195
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072950961774813197, guid: bb58a03388ae0f94094841a85d2992d7,
+        type: 3}
+      propertyPath: runInBackground
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2072950961774813197, guid: bb58a03388ae0f94094841a85d2992d7,
         type: 3}
@@ -1588,6 +1617,11 @@ PrefabInstance:
     - target: {fileID: 2072950961774813197, guid: bb58a03388ae0f94094841a85d2992d7,
         type: 3}
       propertyPath: dontDestroyOnLoad
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072950961774813197, guid: bb58a03388ae0f94094841a85d2992d7,
+        type: 3}
+      propertyPath: autoStartServerBuild
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2072950961774813197, guid: bb58a03388ae0f94094841a85d2992d7,
@@ -1643,6 +1677,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4263918943264411712, guid: 7c161cfa885ad9e42ba71fd25cbe5589,
         type: 3}
+    - target: {fileID: 2072950961774813197, guid: bb58a03388ae0f94094841a85d2992d7,
+        type: 3}
+      propertyPath: PersistNetworkManagerToOfflineScene
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2072950961774813194, guid: bb58a03388ae0f94094841a85d2992d7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bb58a03388ae0f94094841a85d2992d7, type: 3}
