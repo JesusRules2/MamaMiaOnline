@@ -1,0 +1,96 @@
+{
+    "name": "InputForMenu",
+    "maps": [
+        {
+            "name": "menu",
+            "id": "70a77f8e-0cdb-4e3c-ac2d-97cb2ff09916",
+            "actions": [
+                {
+                    "name": "ButtonUp",
+                    "type": "Button",
+                    "id": "46b95765-3d74-422a-a965-fab773563288",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ButtonDown",
+                    "type": "Button",
+                    "id": "340d112b-6559-4f05-8681-d52ba6a5edcc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Play",
+                    "type": "Button",
+                    "id": "47b6a4b5-1b3d-4a73-acde-811a4873f05d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "efb81f68-d39e-4fa8-ade9-30f9f8cc5734",
+                    "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "",
+                    "action": "ButtonUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "07d29b4c-70a3-469d-a871-364ef271beee",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "83e44eae-73f3-45e8-8224-4cbed6dc1673",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "",
+                    "action": "ButtonDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0c2e800a-2c14-4439-9d00-31b0ff9fcdae",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aeb56d2c-5747-4f00-8dc3-30d79012cc74",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Play",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

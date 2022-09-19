@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3074131845050437296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3074131845050437297}
+  - component: {fileID: 3074131845050437311}
+  - component: {fileID: 3074131845050437310}
+  m_Layer: 0
+  m_Name: NetworkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3074131845050437297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074131845050437296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 327.752, y: 216.61192, z: -5.2205315}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3074131845050437311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074131845050437296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aab4c8111b7c411b9b92cf3dbc5bd4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroyOnLoad: 1
+  PersistNetworkManagerToOfflineScene: 0
+  runInBackground: 1
+  autoStartServerBuild: 1
+  serverTickRate: 30
+  serverBatching: 1
+  serverBatchInterval: 0
+  offlineScene: Assets/Scenes/Lobby2/Offline.unity
+  onlineScene: Assets/Scenes/Lobby2/Lobby.unity
+  transport: {fileID: 3074131845050437310}
+  networkAddress: localhost
+  maxConnections: 12
+  disconnectInactiveConnections: 0
+  disconnectInactiveTimeout: 60
+  authenticator: {fileID: 0}
+  playerPrefab: {fileID: 2436277776146392325, guid: cffef5df4d3e66a448d0397db8ab3f83,
+    type: 3}
+  autoCreatePlayer: 1
+  playerSpawnMethod: 0
+  spawnPrefabs:
+  - {fileID: 7031767450636598726, guid: a0ba31c0e8a5dcb4aad07ddad51d478e, type: 3}
+  - {fileID: 4263918943264411712, guid: 40054c54e9855f64fae155ac94e5116b, type: 3}
+  - {fileID: 8940272025356966084, guid: 16827a9d4289b744299fce3d8161f721, type: 3}
+--- !u!114 &3074131845050437310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074131845050437296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7424c1070fad4ba2a7a96b02fbeb4bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  port: 7777
+  NoDelay: 1
+  SendTimeout: 5000
+  ReceiveTimeout: 30000
+  serverMaxMessageSize: 16384
+  serverMaxReceivesPerTick: 10000
+  serverSendQueueLimitPerConnection: 10000
+  serverReceiveQueueLimitPerConnection: 10000
+  clientMaxMessageSize: 16384
+  clientMaxReceivesPerTick: 1000
+  clientSendQueueLimit: 10000
+  clientReceiveQueueLimit: 10000
